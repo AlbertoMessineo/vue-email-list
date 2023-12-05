@@ -3,17 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link gf -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
     <!-- link css -->
     <link rel="stylesheet" href="styles.css">
+
     <title>vue-email-list</title>
 </head>
 <body>
+   
     <div id="app">
-        <li>{{mailGenerator}}</li>
+        <div class="container text-center">
+        <header>
+            <h1>Hacker mail generator</h1>
+        </header>
+        <button @click="reloadPage">Genera altre 10 mail</button>
+        <ul>
+            <li v-for="mail in mails" class="mail-item">{{mail}}</li>
+        </ul>
+    </div>
+        
+        
         
     </div>
     <!-- link VUE js -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>              
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- link axios    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js" integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>           
     <!-- link js -->
     <script src="main.js"></script>
 </body>

@@ -2,4 +2,43 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nova Square', sans-serif;
+}
+
+.container{
+    background-color: black;
+    height: 100vh;
+    max-height: 100%;
+    
+}
+.text-center{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   padding: 20px; 
+}
+h1{
+    color: greenyellow;
+    margin: 25px;
+}
+button{
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(0, 0, 255);
+    color: rgb(158, 210, 255);
+    border: 3px dashed yellow;
+    cursor: pointer;
+}
+ul{
+    width: fit-content;
+    list-style: none;
+    color: greenyellow;
+    border: 1px dashed greenyellow;
+    padding: 15px;
+
+}
+.mail-item{
+    margin: 10px;
+
 }
